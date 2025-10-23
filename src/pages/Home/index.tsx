@@ -1,0 +1,287 @@
+import { Contact } from "../../components/Contact";
+import { Examples } from "../../components/Examples";
+import { Footer } from "../../components/Footer";
+import { setTitle } from "../../utils/setTitle";
+
+export default function Home() {
+  setTitle("Главная | АТОМХИМПЛАСТ");
+  return (
+    <div className="min-h-screen flex flex-col text-gray-900">
+      <main className="flex-grow w-full">
+        <section
+          id="hero"
+          aria-label="Hero"
+          className="flex justify-center items-center w-full bg-white"
+        >
+          <div className="w-full px-0">
+            <div
+              className="relative overflow-hidden rounded-none sm:rounded-2xl lg:rounded-3xl shadow-xl mx-auto max-w-[1160px]"
+              style={{
+                backgroundImage:
+                  "linear-gradient(180deg, rgba(3,7,18,0.24), rgba(3,7,18,0.24)), url('/main-header.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+              }}
+            >
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/10"
+              />
+              <div className="relative z-10 w-full text-white py-10 sm:py-14 lg:py-20 px-5 sm:px-10 lg:px-20">
+                <div className="mb-3">
+                  <span className="inline-block bg-white/10 px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold tracking-wide">
+                    Гальваническая обработка
+                  </span>
+                </div>
+                <h1
+                  className="font-extrabold leading-tight max-w-[1000px]"
+                  style={{
+                    fontSize: "clamp(1.6rem, 4.5vw, 3.5rem)",
+                    lineHeight: 1.02,
+                    WebkitFontSmoothing: "antialiased",
+                  }}
+                >
+                  Прочность и долговечность ваших изделий — профессиональная
+                  гальваника от{" "}
+                  <span className="font-black uppercase tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-[#0087bd] to-[#009bd9]">
+                    АТОМХИМПЛАСТ
+                  </span>
+                </h1>
+                <p className="mt-4 max-w-3xl text-[15.5px] sm:text-[17px] leading-relaxed text-white/90">
+                  Мы выполняем полный цикл гальванотехнической обработки:
+                  подготовка поверхности, нанесение покрытий (хром, цинк,
+                  никель, медь, серебрение), контроль качества и упаковка.
+                  Работаем с партиями любой сложности — доставка по всей России.
+                </p>
+                <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:flex-wrap gap-3 sm:gap-4">
+                  <a
+                    href="#contacts"
+                    className="inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-semibold bg-gradient-to-r from-[#0087bd] to-[#009bd9] text-white shadow-lg hover:brightness-105 transition w-full sm:w-auto text-center"
+                  >
+                    Узнать стоимость
+                  </a>
+                  <div className="flex gap-3 flex-wrap items-center text-sm text-white/90 justify-start sm:justify-center w-full sm:w-auto">
+                    <span className="px-3 py-1 bg-white/8 rounded-lg text-xs sm:text-sm">
+                      Сроки от 3 дней
+                    </span>
+                    <span className="px-3 py-1 bg-white/8 rounded-lg text-xs sm:text-sm">
+                      Гарантия качества
+                    </span>
+                    <span className="px-3 py-1 bg-white/8 rounded-lg text-xs sm:text-sm">
+                      Доставка по России
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute left-0 right-0 bottom-0 h-12 bg-gradient-to-t from-black/20 to-transparent sm:h-20" />
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="solutions"
+          aria-label="Комплексное решение"
+          className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10 mt-5 md:mt-10"
+        >
+          <div className="max-w-[1160px] mx-auto grid grid-cols-1 sm:grid-cols-12 gap-8 items-center">
+            <div className="sm:col-span-7 space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight">
+                Комплексное решение ваших задач
+              </h2>
+              <p className="text-gray-700">
+                От инженерной подготовки и подготовки поверхности до нанесения
+                покрытий и пост-обработки — мы берем на себя весь цикл.
+                Оптимизируем логистику, контролируем качество и соблюдаем сроки.
+              </p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-700 list-disc list-inside mt-4">
+                <li>Технологическая подготовка и проектирование</li>
+                <li>Сертифицированные материалы и контроль</li>
+                <li>Масштабируемость от единиц до серий</li>
+                <li>Упаковка и логистика под клиента</li>
+              </ul>
+            </div>
+            <div className="sm:col-span-5">
+              <div className="rounded-xl overflow-hidden bg-gray-50 p-4 border border-gray-100">
+                <img
+                  src="/tach.png"
+                  alt="Решения и процессы"
+                  className="w-full h-44 object-cover rounded-md"
+                />
+                <p className="mt-4 text-sm text-gray-600">
+                  Индивидуальный подход и оптимизация технологического процесса
+                  для экономии времени и материалов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="services"
+          aria-label="Каталог услуг"
+          className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10 mt-5 md:mt-10"
+        >
+          <div className="max-w-[1160px] mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight">
+              Каталог услуг по нанесению покрытий
+            </h2>
+            <p className="mt-3 text-gray-700 max-w-prose">
+              Мы предлагаем широкий набор покрытий для любых изделий: от
+              стандартных деталей до сложных промышленных конструкций.
+            </p>
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <article className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
+                <h3 className="font-semibold text-lg sm:text-xl">Цинкование</h3>
+                <p className="mt-2 text-sm sm:text-base text-gray-600">
+                  Защита металлических деталей от коррозии, улучшение
+                  долговечности, обработка крупных партий.
+                </p>
+                <ul className="mt-3 text-gray-700 text-sm sm:text-base list-disc list-inside space-y-1">
+                  <li>Толщина покрытия: 5–15 мкм</li>
+                  <li>Подходит для стали и чугуна</li>
+                  <li>Сроки: от 3 дней, партии до 10k</li>
+                </ul>
+              </article>
+              <article className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
+                <h3 className="font-semibold text-lg sm:text-xl">
+                  Никелирование
+                </h3>
+                <p className="mt-2 text-sm sm:text-base text-gray-600">
+                  Декоративное и защитное покрытие, повышающее коррозионную
+                  стойкость и эстетические качества.
+                </p>
+                <ul className="mt-3 text-gray-700 text-sm sm:text-base list-disc list-inside space-y-1">
+                  <li>Толщина: до 50 мкм</li>
+                  <li>Глянцевый или матовый финиш</li>
+                  <li>Контроль качества по стандартам ISO</li>
+                </ul>
+              </article>
+              <article className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
+                <h3 className="font-semibold text-lg sm:text-xl">
+                  Хромирование
+                </h3>
+                <p className="mt-2 text-sm sm:text-base text-gray-600">
+                  Прочное декоративное покрытие для инструментов, деталей
+                  автомобилей и промышленных конструкций.
+                </p>
+                <ul className="mt-3 text-gray-700 text-sm sm:text-base list-disc list-inside space-y-1">
+                  <li>Полированный или матовый финиш</li>
+                  <li>Толщина: 0,5–10 мкм</li>
+                  <li>Соответствие ГОСТ и международным стандартам</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="extra-services"
+          aria-label="Дополнительные виды покрытий"
+          className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10 mt-5 md:mt-10"
+        >
+          <div className="max-w-[1160px] mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight">
+              Специальные и функциональные покрытия
+            </h2>
+            <p className="mt-3 text-gray-700 max-w-prose">
+              Для изделий, требующих уникальных характеристик — износостойкости,
+              электропроводности или защиты в агрессивных средах.
+            </p>
+
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
+                <h3 className="font-semibold text-lg sm:text-xl">
+                  Кадмирование
+                </h3>
+                <p className="mt-2 text-sm sm:text-base text-gray-600">
+                  Обеспечивает высокую стойкость к морской коррозии и химическим
+                  воздействиям. Часто применяется в авиационной промышленности.
+                </p>
+              </div>
+
+              <div className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
+                <h3 className="font-semibold text-lg sm:text-xl">Серебрение</h3>
+                <p className="mt-2 text-sm sm:text-base text-gray-600">
+                  Используется для улучшения электропроводности, защиты
+                  контактов и повышения износостойкости изделий.
+                </p>
+              </div>
+
+              <div className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
+                <h3 className="font-semibold text-lg sm:text-xl">
+                  Медь и сплавы
+                </h3>
+                <p className="mt-2 text-sm sm:text-base text-gray-600">
+                  Декоративное и техническое покрытие для деталей, где важно
+                  сочетание проводимости и антикоррозийных свойств.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-center mt-10 text-gray-700 font-medium">
+              Минимальная сумма заказа — 500 000 руб.
+            </p>
+          </div>
+        </section>
+        <Examples />
+        <section
+          id="partners"
+          aria-label="Наши партнеры"
+          className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10 my-5 md:my-10"
+        >
+          <div className="max-w-[1160px] mx-auto text-center">
+            <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight mb-6">
+              Наши партнёры
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-center">
+              <div className="flex flex-col items-center">
+                <img
+                  src="/Rosatom.png"
+                  alt="АЭМ-Технологии РОСАТОМ"
+                  className="h-16 sm:h-20 object-contain mb-3"
+                />
+                <p className="text-sm sm:text-base font-medium text-gray-700">
+                  АЭМ-Технологии <br /> РОСАТОМ
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/Electrosevka.png"
+                  alt="Электросевкавмонтаж"
+                  className="h-16 sm:h-20 object-contain mb-3"
+                />
+                <p className="text-sm sm:text-base font-medium text-gray-700">
+                  Электросевкавмонтаж
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/Atomspec.png"
+                  alt="Атомспецсервис"
+                  className="h-16 sm:h-20 object-contain mb-3"
+                />
+                <p className="text-sm sm:text-base font-medium text-gray-700">
+                  Атомспецсервис
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/Atommash.png"
+                  alt="Атоммашэкспорт"
+                  className="h-16 sm:h-20 object-contain mb-3"
+                />
+                <p className="text-sm sm:text-base font-medium text-gray-700">
+                  Атоммашэкспорт
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contacts">
+          <Contact />
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}
