@@ -20,7 +20,7 @@ export const routers = [
     component: <Delivery />,
   },
   {
-    path: "/contacs",
+    path: "/contacts",
     name: "Контакты",
     component: <Contacts />,
   },
