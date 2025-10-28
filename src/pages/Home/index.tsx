@@ -1,7 +1,8 @@
-import { Contact } from "../../components/Contact";
-import { Examples } from "../../components/Examples";
-import { Footer } from "../../components/Footer";
 import { setTitle } from "../../utils/setTitle";
+import { Footer } from "../../components/Footer";
+import { Slider } from "../../components/Slider";
+import { Examples } from "../../components/Examples";
+import { Contact } from "../../components/Contact";
 
 export default function Home() {
   setTitle("Главная | АТОМХИМПЛАСТ");
@@ -27,6 +28,17 @@ export default function Home() {
                 aria-hidden="true"
                 className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/10"
               />
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 opacity-20 mix-blend-overlay"
+                style={{
+                  backgroundImage: "url('/main-header-background-1.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              />
+
               <div className="relative z-10 w-full text-white py-10 sm:py-14 lg:py-20 px-5 sm:px-10 lg:px-20">
                 <div className="mb-3">
                   <span className="inline-block bg-white/10 px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold tracking-wide">
@@ -34,7 +46,7 @@ export default function Home() {
                   </span>
                 </div>
                 <h1
-                  className="font-extrabold leading-tight max-w-[1000px]"
+                  className="font-medium leading-tight max-w-[1000px]"
                   style={{
                     fontSize: "clamp(1.6rem, 4.5vw, 3.5rem)",
                     lineHeight: 1.02,
@@ -77,7 +89,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section
           id="solutions"
           aria-label="Комплексное решение"
@@ -86,7 +97,7 @@ export default function Home() {
           <div className="max-w-[1160px] mx-auto grid grid-cols-1 sm:grid-cols-12 gap-8 items-center">
             <div className="sm:col-span-7 space-y-4">
               <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight">
-                Комплексное решение ваших задач
+                Комплексное решение
               </h2>
               <p className="text-gray-700">
                 От инженерной подготовки и подготовки поверхности до нанесения
@@ -115,69 +126,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <section
-          id="services"
-          aria-label="Каталог услуг"
-          className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10 mt-5 md:mt-10"
-        >
-          <div className="max-w-[1160px] mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight">
-              Каталог услуг по нанесению покрытий
-            </h2>
-            <p className="mt-3 text-gray-700 max-w-prose">
-              Мы предлагаем широкий набор покрытий для любых изделий: от
-              стандартных деталей до сложных промышленных конструкций.
-            </p>
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <article className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
-                <h3 className="font-semibold text-lg sm:text-xl">Цинкование</h3>
-                <p className="mt-2 text-sm sm:text-base text-gray-600">
-                  Защита металлических деталей от коррозии, улучшение
-                  долговечности, обработка крупных партий.
-                </p>
-                <ul className="mt-3 text-gray-700 text-sm sm:text-base list-disc list-inside space-y-1">
-                  <li>Толщина покрытия: 5–15 мкм</li>
-                  <li>Подходит для стали и чугуна</li>
-                  <li>Сроки: от 3 дней, партии до 10k</li>
-                </ul>
-              </article>
-              <article className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
-                <h3 className="font-semibold text-lg sm:text-xl">
-                  Никелирование
-                </h3>
-                <p className="mt-2 text-sm sm:text-base text-gray-600">
-                  Декоративное и защитное покрытие, повышающее коррозионную
-                  стойкость и эстетические качества.
-                </p>
-                <ul className="mt-3 text-gray-700 text-sm sm:text-base list-disc list-inside space-y-1">
-                  <li>Толщина: до 50 мкм</li>
-                  <li>Глянцевый или матовый финиш</li>
-                  <li>Контроль качества по стандартам ISO</li>
-                </ul>
-              </article>
-              <article className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
-                <h3 className="font-semibold text-lg sm:text-xl">
-                  Хромирование
-                </h3>
-                <p className="mt-2 text-sm sm:text-base text-gray-600">
-                  Прочное декоративное покрытие для инструментов, деталей
-                  автомобилей и промышленных конструкций.
-                </p>
-                <ul className="mt-3 text-gray-700 text-sm sm:text-base list-disc list-inside space-y-1">
-                  <li>Полированный или матовый финиш</li>
-                  <li>Толщина: 0,5–10 мкм</li>
-                  <li>Соответствие ГОСТ и международным стандартам</li>
-                </ul>
-              </article>
-            </div>
-          </div>
+        <section id="contacts" className="mt-5 md:mt-10">
+          <Contact />
         </section>
-
+        <Slider />
         <section
           id="extra-services"
           aria-label="Дополнительные виды покрытий"
-          className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10 mt-5 md:mt-10"
+          className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10"
         >
           <div className="max-w-[1160px] mx-auto">
             <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight">
@@ -227,7 +183,7 @@ export default function Home() {
         <section
           id="partners"
           aria-label="Наши партнёры"
-          className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10 my-5 md:my-10"
+          className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10 mt-5 md:mt-10"
         >
           <div className="max-w-[1160px] mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight mb-8">
@@ -259,9 +215,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-        <section id="contacts">
-          <Contact />
         </section>
       </main>
       <Footer />

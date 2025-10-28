@@ -20,6 +20,21 @@ export default function Delivery() {
               backgroundPosition: "center center",
             }}
           >
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/10"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 opacity-60 mix-blend-overlay"
+              style={{
+                backgroundImage: "url('/main-header-background-2.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+                backgroundRepeat: "no-repeat",
+              }}
+            />
+
             <div className="relative z-10 text-white py-10 sm:py-14 lg:py-20 px-6 sm:px-10 lg:px-20">
               <h1
                 className="font-extrabold leading-tight max-w-[900px]"
@@ -43,9 +58,11 @@ export default function Delivery() {
                 </a>
               </div>
             </div>
+
             <div className="pointer-events-none absolute left-0 right-0 bottom-0 h-12 bg-gradient-to-t from-black/25 to-transparent sm:h-20" />
           </div>
         </section>
+
         <section
           id="terms"
           className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10 mt-6 md:mt-10"

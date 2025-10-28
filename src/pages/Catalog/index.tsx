@@ -26,7 +26,7 @@ function Catalog() {
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="p-6 bg-white rounded-xl shadow-md border border-gray-100">
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  🧩 Индивидуальный подбор
+                  💡 Индивидуальный подбор
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Подберем оптимальное покрытие под ваши технические требования
@@ -46,7 +46,7 @@ function Catalog() {
 
               <div className="p-6 bg-white rounded-xl shadow-md border border-gray-100">
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
-                  🚀 Современные технологии
+                  ♻️ Современные технологии
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Применяем инновационные методы обработки для достижения
