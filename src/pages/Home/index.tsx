@@ -226,49 +226,32 @@ export default function Home() {
         <Examples />
         <section
           id="partners"
-          aria-label="Наши партнеры"
+          aria-label="Наши партнёры"
           className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10 my-5 md:my-10"
         >
           <div className="max-w-[1160px] mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight mb-6">
+            <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight mb-8">
               Наши партнёры
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-center">
-              <div className="flex flex-col items-center">
-                <img
-                  src="/Rosatom.png"
-                  alt="АЭМ-Технологии РОСАТОМ"
-                  className="h-16 sm:h-20 object-contain mb-3"
-                />
-                <p className="text-sm sm:text-base font-medium text-gray-700">
-                  АЭМ-Технологии <br /> РОСАТОМ
-                </p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="/Electrosevka.png"
-                  alt="Электросевкавмонтаж"
-                  className="h-16 sm:h-20 object-contain mb-3"
-                />
-                <p className="text-sm sm:text-base font-medium text-gray-700">
-                  Электросевкавмонтаж
-                </p>
-              </div>
-              <div className="flex flex-col items-center">
+            <div className="w-full grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-10 items-center justify-items-center">
+              <div className="flex flex-col items-center text-center">
                 <img
                   src="/Atomspec.png"
                   alt="Атомспецсервис"
-                  className="h-16 sm:h-20 object-contain mb-3"
+                  className="h-20 sm:h-24 object-contain mb-3"
+                  loading="lazy"
                 />
                 <p className="text-sm sm:text-base font-medium text-gray-700">
                   Атомспецсервис
                 </p>
               </div>
-              <div className="flex flex-col items-center">
+
+              <div className="flex flex-col items-center text-center">
                 <img
                   src="/Atommash.png"
                   alt="Атоммашэкспорт"
-                  className="h-16 sm:h-20 object-contain mb-3"
+                  className="h-20 sm:h-24 object-contain mb-3"
+                  loading="lazy"
                 />
                 <p className="text-sm sm:text-base font-medium text-gray-700">
                   Атоммашэкспорт

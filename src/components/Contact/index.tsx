@@ -82,23 +82,26 @@ export function Contact() {
           <div className="lg:col-span-1 space-y-4 p-4 rounded-lg border border-gray-100 bg-gray-50">
             <div>
               <h3 className="font-semibold">Телефон</h3>
-              <a href="tel:+78001234567" className="block mt-2 text-gray-700">
-                +7 (800) 123-45-67
+              <a href="tel:+79282434347" className="block mt-2 text-gray-700">
+                +7 (928) 243-43-47
+              </a>
+              <a href="tel:+79285555323" className="block mt-2 text-gray-700">
+                +7 (928) 555-53-23
               </a>
             </div>
             <div>
               <h3 className="font-semibold">Почта</h3>
               <a
-                href="mailto:info@atomchimplast.ru"
+                href="mailto:zayruev@gmail.com"
                 className="block mt-2 text-gray-700"
               >
-                info@atomchimplast.ru
+                zayruev@gmail.com
               </a>
             </div>
             <div>
               <h3 className="font-semibold">Адрес</h3>
               <p className="mt-2 text-gray-700">
-                Ростовская область, г. Волгодонск, ул. Химиков
+                Город Волгодонск, ул. Химикова 54Б
               </p>
             </div>
           </div>
