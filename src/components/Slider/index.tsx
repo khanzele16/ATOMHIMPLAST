@@ -124,16 +124,6 @@ const slidesData = [
               <li>Размеры: до 10000 мм</li>
             </ul>
           </div>
-          <div className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
-            <h3 className="font-semibold text-lg sm:text-xl">Анодирование</h3>
-            <p className="mt-2 text-sm sm:text-base text-gray-600">
-              Применяется для создания защитного слоя на алюминиевых деталях с
-              улучшенными антикоррозийными и декоративными свойствами.
-            </p>
-            <ul className="mt-3 text-gray-700 text-sm sm:text-base list-disc list-inside space-y-1">
-              <li>Размеры: до 10000 мм</li>
-            </ul>
-          </div>
         </div>
       </>
     ),
@@ -149,15 +139,6 @@ const slidesData = [
           улучшения функциональных характеристик.
         </p>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
-            <h3 className="font-semibold text-lg sm:text-xl">Меднение</h3>
-            <p className="mt-2 text-sm sm:text-base text-gray-600">
-              Покрытие медью для улучшения проводимости и защиты от коррозии.
-            </p>
-            <ul className="mt-3 text-gray-700 text-sm sm:text-base list-disc list-inside space-y-1">
-              <li>Размеры: до 5000 мм</li>
-            </ul>
-          </div>
           <div className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
             <h3 className="font-semibold text-lg sm:text-xl">Хромирование</h3>
             <p className="mt-2 text-sm sm:text-base text-gray-600">

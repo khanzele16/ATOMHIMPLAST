@@ -39,10 +39,10 @@ export function Contact() {
 
     try {
       await emailjs.sendForm(
-        "service_bqmyher",
-        "template_anragu9",
+        "service_zcmjgrz",
+        "template_pyp5nxo",
         formRef.current,
-        "LSe_EY_ONu5XSKBbX"
+        "5uPMlCm18tLKS_mZj"
       );
 
       setSent(true);
