@@ -12,42 +12,12 @@ export function Footer() {
         </div>
 
         <nav className="flex flex-wrap gap-6">
-          <a
-            href="/#solutions"
-            className="text-sm text-gray-600 hover:text-gray-800"
-          >
-            Решения
-          </a>
-          <a
-            href="/#services"
-            className="text-sm text-gray-600 hover:text-gray-800"
-          >
-            Каталог
-          </a>
-          <a
-            href="/#extra-services"
-            className="text-sm text-gray-600 hover:text-gray-800"
-          >
-            Спецпокрытия
-          </a>
-          <a
-            href="/#projects"
-            className="text-sm text-gray-600 hover:text-gray-800"
-          >
-            Примеры
-          </a>
-          <a
-            href="/#partners"
-            className="text-sm text-gray-600 hover:text-gray-800"
-          >
-            Партнёры
-          </a>
-          <a
-            href="/#contacts"
-            className="text-sm text-gray-600 hover:text-gray-800"
-          >
-            Контакты
-          </a>
+          <a href="/#solutions" className="text-sm text-gray-600 hover:text-gray-800">Решения</a>
+          <a href="/catalog#catalog-intro" className="text-sm text-gray-600 hover:text-gray-800">Каталог</a>
+          <a href="/catalog#extra-services" className="text-sm text-gray-600 hover:text-gray-800">Спецпокрытия</a>
+          <a href="/#projects" className="text-sm text-gray-600 hover:text-gray-800">Примеры</a>
+          <a href="/#partners" className="text-sm text-gray-600 hover:text-gray-800">Партнёры</a>
+          <a href="/#contacts" className="text-sm text-gray-600 hover:text-gray-800">Контакты</a>
         </nav>
         <div className="text-sm text-gray-500">
           © {new Date().getFullYear()} АТОМХИМПЛАСТ. Все права защищены.

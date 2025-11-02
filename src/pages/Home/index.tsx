@@ -130,55 +130,6 @@ export default function Home() {
           <Contact />
         </section>
         <Slider />
-        <section
-          id="extra-services"
-          aria-label="Дополнительные виды покрытий"
-          className="w-full bg-white rounded-2xl shadow-sm px-4 sm:px-8 lg:px-16 py-10"
-        >
-          <div className="max-w-[1160px] mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight">
-              Специальные и функциональные покрытия
-            </h2>
-            <p className="mt-3 text-gray-700 max-w-prose">
-              Для изделий, требующих уникальных характеристик — износостойкости,
-              электропроводности или защиты в агрессивных средах.
-            </p>
-
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
-                <h3 className="font-semibold text-lg sm:text-xl">
-                  Кадмирование
-                </h3>
-                <p className="mt-2 text-sm sm:text-base text-gray-600">
-                  Обеспечивает высокую стойкость к морской коррозии и химическим
-                  воздействиям. Часто применяется в авиационной промышленности.
-                </p>
-              </div>
-
-              <div className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
-                <h3 className="font-semibold text-lg sm:text-xl">Серебрение</h3>
-                <p className="mt-2 text-sm sm:text-base text-gray-600">
-                  Используется для улучшения электропроводности, защиты
-                  контактов и повышения износостойкости изделий.
-                </p>
-              </div>
-
-              <div className="p-6 border border-gray-100 rounded-lg bg-gray-50 hover:shadow-lg transition">
-                <h3 className="font-semibold text-lg sm:text-xl">
-                  Медь и сплавы
-                </h3>
-                <p className="mt-2 text-sm sm:text-base text-gray-600">
-                  Декоративное и техническое покрытие для деталей, где важно
-                  сочетание проводимости и антикоррозийных свойств.
-                </p>
-              </div>
-            </div>
-
-            <p className="text-center mt-10 text-gray-700 font-medium">
-              Минимальная сумма заказа — 500 000 руб.
-            </p>
-          </div>
-        </section>
         <Examples />
         <section
           id="partners"
